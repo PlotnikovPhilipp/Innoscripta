@@ -1,0 +1,33 @@
+.horizontal-menu__item
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.horizontal-menu__icon-container
+    position: relative
+    margin-bottom: 0.3vw
+
+.horizontal-menu__item-icon,
+.horizontal-menu__item-icon_hover
+    height: 2vw
+
+.horizontal-menu__item-icon_hover
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    transition: all 0.5s ease-in-out 0s
+
+.horizontal-menu__item:hover
+    cursor: pointer
+    .horizontal-menu__item-icon_hover
+        opacity: 1
+    .horizontal-menu__item-title
+        color: black
+
+.horizontal-menu__item-title
+    text-align: center
+    white-space: pre-line
+    color: rgba(0, 0, 0, 0.7)
+    transition: all 0.5s ease-in-out 0s
+    font-size: 0.9rem
